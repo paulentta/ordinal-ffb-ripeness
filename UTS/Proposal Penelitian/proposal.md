@@ -12,7 +12,7 @@ Kualitas dan rendemen minyak sawit sangat dipengaruhi tingkat kematangan TBS saa
 
 Namun ada tiga masalah pada penelitian sejenis. Pertama, tingkat kematangan bersifat **berurutan** (Immature → PartiallyRipe → FullyRipe → OverRipe → Decayed), tetapi umumnya diperlakukan sebagai kelas nominal, sehingga salah satu tingkat dan salah empat tingkat dihukum sama. Kedua, dataset kematangan sering berisi **beberapa foto dari tandan yang sama**; bila dibagi acak per gambar, foto kembar tersebar ke data latih dan uji sehingga akurasi terlalu optimis (Yagis dkk., 2021; Laroca dkk., 2023). Ketiga, evaluasi umumnya hanya melaporkan akurasi.
 
-Analisis data awal pada dataset 4.728 citra menunjukkan ketiga masalah itu nyata: 2.230 citra (47%) berada dalam kelompok foto yang tersebar lintas split, warna saja hanya mencapai macro-F1 0,489, dan 79% kesalahan model awal hanya meleset satu tingkat. Rincian ada di [`riset gap/gap.md`](../riset%20gap/gap.md).
+Analisis data awal pada dataset 4.728 citra menunjukkan ketiga masalah itu nyata: 2.230 citra (47%) berada dalam kelompok foto yang tersebar lintas split, warna saja hanya mencapai macro-F1 0,489, dan 79% kesalahan model awal hanya meleset satu tingkat. Rincian ada di [`Research Gap/gap.md`](../Research%20Gap/gap.md).
 
 ## 2. Rumusan masalah
 
@@ -68,7 +68,7 @@ flowchart TD
 
 ### 6.2 Data
 
-Dataset dan hasil analisisnya dijelaskan di [`dataset riset/dataset.md`](../dataset%20riset/dataset.md). Split utama adalah **split berbasis kelompok** (`split_grup`): satu kelompok foto tandan/sesi masuk ke satu split saja, proporsi 70/15/15 dijaga per kelas, dan tidak ada kelompok yang bocor.
+Dataset dan hasil analisisnya dijelaskan di [`Dataset Riset/dataset.md`](../Dataset%20Riset/dataset.md). Split utama adalah **split berbasis kelompok** (`split_grup`): satu kelompok foto tandan/sesi masuk ke satu split saja, proporsi 70/15/15 dijaga per kelas, dan tidak ada kelompok yang bocor.
 
 ### 6.3 Preprocessing dan augmentasi
 
@@ -105,7 +105,7 @@ Perkiraan beban: ±10–20 menit per run di GPU T4 (Google Colab), total ±2–3
 
 ### 6.6 Evaluasi
 
-Metrik dan protokol lengkap ada di [`metrik evaluasi/metrik.md`](../metrik%20evaluasi/metrik.md). Ringkasnya: macro-F1 dan MAE sebagai metrik utama, ditambah QWK, % salah ≥ 2 tingkat, confusion matrix, rata-rata ± standar deviasi 3 seed (Bouthillier dkk., 2021), dan Grad-CAM (Zaki dkk., 2023).
+Metrik dan protokol lengkap ada di [`Metrik Evaluasi/metrik.md`](../Metrik%20Evaluasi/metrik.md). Ringkasnya: macro-F1 dan MAE sebagai metrik utama, ditambah QWK, % salah ≥ 2 tingkat, confusion matrix, rata-rata ± standar deviasi 3 seed (Bouthillier dkk., 2021), dan Grad-CAM (Zaki dkk., 2023).
 
 ## 7. Hipotesis dan hasil yang diharapkan
 
