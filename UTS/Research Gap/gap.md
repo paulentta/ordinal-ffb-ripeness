@@ -44,7 +44,7 @@ flowchart LR
 2. Perbandingan EfficientNet-B0 dengan regresi ordinal (CORN) dan klasifikasi biasa pada metrik ordinal.
 3. Analisis karakteristik dataset yang terdokumentasi (warna, kualitas, label), yang dapat dipakai ulang oleh penelitian lain pada dataset yang sama.
 
-## 4. Di luar cakupan (saran penelitian lanjutan)
+## 4. Di luar cakupan
 
 - Deteksi objek banyak tandan dalam satu gambar (YOLO, Faster R-CNN).
 - Pembanding ordinal lain (CORAL), weighted sampler, label smoothing.
